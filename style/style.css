@@ -5,3 +5,69 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Code-Pro-Bold-LC';
+  src: url("../fonts/Code-Pro-Bold-LC.eot");
+  src: url("../fonts/Code-Pro-Bold-LC.eot?#iefix") format("embedded-opentype"), url("../fonts/Code-Pro-Bold-LC.woff") format("woff"), url("../fonts/Code-Pro-Bold-LC.ttf") format("truetype"), url("../fonts/Code-Pro-Bold-LC.svg#JournalRegular") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/*========================================================
+                    header
+=========================================================*/
+.content_main {
+  width: 940px;
+  margin: auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+header .back_black {
+  background-color: #2b2723;
+}
+header .back_black .content_main {
+  position: relative;
+}
+header .back_black .content_main nav {
+  float: left;
+}
+header .back_black .content_main nav ul li:first-child:before {
+  content: none;
+}
+header .back_black .content_main nav ul li:before {
+  content: url(../img/dot.png);
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+header .back_black .content_main nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+header .back_black .content_main nav ul li a {
+  color: white;
+  border: none;
+}
+header .back_black .content_main a {
+  color: #ffe328;
+  border-bottom: #ffe328 dashed 1px;
+  float: right;
+}
+header .back_black .content_main .trash:before {
+  content: url(../img/trash.png);
+}
+header .back_black .content_main .trash {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #4a3f32;
+  padding: 15px;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
