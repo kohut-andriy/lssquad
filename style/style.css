@@ -12,12 +12,26 @@
   font-weight: bold;
   font-style: normal;
 }
+.cf:after,
+.cf:before {
+  content: '';
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
 /*========================================================
                     header
 =========================================================*/
 .content_main {
   width: 940px;
   margin: auto;
+}
+* {
+  box-sizing: border-box;
 }
 ul {
   padding: 0;
@@ -70,4 +84,96 @@ header .back_black .content_main .trash {
   color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.promo h1 {
+  font-size: 18px;
+}
+.promo aside {
+  margin-right: 2%;
+  display: inline-block;
+  width: 28.5%;
+}
+.promo aside ul {
+  list-style: none;
+  background-color: #42392e;
+  min-height: 545px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+.promo aside ul li {
+  border-bottom: 1px solid #554d43;
+  line-height: 39px;
+  text-indent: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+.promo aside ul li:not(:first-child):before {
+  content: url(../img/arrow.png);
+  float: right;
+  margin-right: 10px;
+}
+.promo aside ul li:first-child {
+  background: linear-gradient(180deg, rgba(53, 107, 0, 0.9), #356b00);
+  border-bottom: 1px solid #356b00;
+  text-transform: none;
+  line-height: 46px;
+  font-size: 0.8em;
+}
+.promo .content-wrapper {
+  display: inline-block;
+  width: 69%;
+  vertical-align: top;
+}
+.promo .content-wrapper .search-buts form {
+  width: 70%;
+  margin-right: 3%;
+  display: block;
+  float: left;
+  position: relative;
+}
+.promo .content-wrapper .search-buts form input {
+  line-height: 42px;
+  margin: 0;
+  display: inline-block;
+}
+.promo .content-wrapper .search-buts form input[type=text] {
+  width: 83%;
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-indent: 42px;
+}
+.promo .content-wrapper .search-buts form input[type=submit] {
+  width: 16%;
+  float: left;
+  background: linear-gradient(180deg, rgba(53, 107, 0, 0.9), #356b00);
+  border: 2px solid #356b00;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.promo .content-wrapper .search-buts form:before {
+  content: url(../img/search.png);
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+.promo .content-wrapper .search-buts .button {
+  width: 26%;
+  display: block;
+  float: left;
+  background-color: #583843;
+  border-radius: 5px;
+  height: 48px;
+  text-align: center;
+  padding-top: 5px;
+}
+.promo .content-wrapper .search-buts .button span {
+  font-size: 0.9em;
+  color: #dcc12c;
+}
+.promo .content-wrapper .search-buts .button p {
+  margin: 0;
+  color: #fff;
 }

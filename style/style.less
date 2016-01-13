@@ -18,6 +18,9 @@
 	font-weight: bold;
 	font-style: normal;
 }
+.cf:after,.cf:before {content: '';display: table;}
+.cf:after {clear: both;}
+.cf {zoom: 1;}
 /*========================================================
                     header
 =========================================================*/
@@ -25,6 +28,10 @@
 {
 	width: 940px;
 	margin: auto;
+	
+}
+* {
+	box-sizing: border-box;
 }
 ul
 {
@@ -97,5 +104,103 @@ header
 	}
   }
 
+}
+
+.promo {
+	h1 {
+		font-size: 18px;
+	}
+	aside {
+		margin-right: 2%;
+		display: inline-block;
+		width: 28.5%;
+		ul {
+			list-style: none;
+			background-color: #42392e;
+			min-height: 545px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			overflow: hidden;
+			li {
+				border-bottom: 1px solid #554d43;
+				line-height: 39px;
+				text-indent: 14px;
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 0.7em;
+			}
+			li:not(:first-child):before {
+				content: url(../img/arrow.png);
+				float: right;
+				margin-right: 10px;
+			}
+			li:first-child {
+				background: linear-gradient( 180deg, rgba(53, 107, 0, 0.9), rgba(53, 107, 0, 1));
+				border-bottom: 1px solid #356b00;
+				text-transform: none;
+				line-height: 46px;
+				font-size: 0.8em;
+			}
+		}
+	}
+	.content-wrapper {
+		display: inline-block;
+		width: 69%;
+		vertical-align: top;
+		.search-buts {
+			form {
+				width: 70%;
+				margin-right: 3%;
+				display: block;
+				float: left;
+				position: relative;
+				input{
+					line-height: 42px;
+					margin: 0;
+					display: inline-block;
+				}
+				input[type=text] {
+					width: 83%;
+					float: left;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+					text-indent: 42px;
+				}
+				input[type=submit] {
+					width: 16%;
+					float: left;
+					background: linear-gradient( 180deg, rgba(53, 107, 0, 0.9), rgba(53, 107, 0, 1));
+					border: 2px solid rgba(53, 107, 0, 1);
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+			}
+			form:before {
+				content: url(../img/search.png);
+				position: absolute;
+				left: 12px;
+				top: 12px;
+			}
+			.button {
+				width: 26%;
+				display: block;
+				float: left;
+				background-color: #583843;
+				border-radius: 5px;
+				height: 48px;
+				text-align: center;
+				padding-top: 5px;
+				span {
+					font-size: 0.9em;
+					color: #dcc12c;
+				}
+				p {
+					margin: 0;
+					color: #fff;
+				}
+		}
+		}
+		
+	}
 }
 
