@@ -26,7 +26,7 @@
 	width: 940px;
 	margin: auto;
 }
-ul
+dir
 {
 	padding: 0;
 	margin: 0;
@@ -46,8 +46,13 @@ header
 		nav
 		{    
 			float: left;
-			ul
+			margin: 6px 0px;
+			dir
 			{
+				li:first-child
+				{
+					padding: 6px 13px 4px 0;
+				}
 				li:first-child:before
 				{
 					content: none;
@@ -56,32 +61,54 @@ header
 				{
 					content: url(../img/dot.png);
 					position: absolute;
-    				left: 0;
-    				top: 8px;
+    				left: -3px;
+    				top: 5px;
 				}
 				li
 				{
 					display: inline-block;
 					position: relative;
-					position: relative;
-    				padding: 10px;
+					padding: 6px 13px 4px 13px;
+					a:hover
+					{
+						color: #ffe328;
+					}
 					a
 					{
 						color: white;
 						border: none;
+						font-family:arial;
+						font-size: 15px;
+						font-weight: normal;
+						font-style: normal;
 					}
 				}
 			}
 		}
-		a
+		.exit:hover
+		{
+			color: white;
+			border-bottom: white dashed 1px;
+		}
+		.exit
 		{
 			color: #ffe328;
     		border-bottom: #ffe328 dashed 1px;
-    		float: right;
+    		float: left;
+    		font-family:arial;
+			font-size: 15px;
+			font-weight: normal;
+			font-style: normal;
+			padding: 0px;
+    		margin: 10px 0 10px 139px;
 		}
+
 		.trash:before
 		{
 			content: url(../img/trash.png);
+			position: absolute;
+    		top: 15px;
+    		right: 79%;
 		}
 		.trash
 		{
@@ -89,13 +116,193 @@ header
     		right: 0;
     		top: 0;
     		background-color: #4a3f32;
-    		padding: 15px;
+    		padding: 15px 26px 21px 50px;
     		color: white;
     		border-bottom-left-radius: 5px;
     		border-bottom-right-radius: 5px;
+    		font-family:arial;
+			font-size: 15px;
+			font-weight: normal;
+			font-style: normal;
+
 		}
 	}
   }
-
+  .white_back
+  {
+  	background: white;
+  	.content_main
+  	{
+  		section
+  		{
+  			float: left;
+  		}
+  		.logo_in_header
+  		{
+  			margin: 20px 24px 20px 5px;
+  		}
+  		.coll_in_header
+  		{
+  			width: 192px;
+  			p
+  			{
+  				color: #583843;
+  				font-family:arial;
+				font-size: 11px;
+				font-weight: normal;
+				font-style: normal;
+				margin: 10px 6px;
+				span
+				{
+					font-size: 21px;
+					display: block;
+					    padding-top: 1px;
+				}
+  			}
+  		}
+  		.address_in_header:before
+  		{
+  			content: url(../img/icon_m.png);
+  			position: absolute;
+    		top: 4px;
+    		left: 6px;
+  		}
+  		.address_in_header
+  		{
+  			width: 334px;
+  			position: relative;
+  			p
+  			{
+  				color: #000000;
+  				font-family:arial;
+				font-size: 13px;
+				font-weight: normal;
+				font-style: normal;
+				margin: 3px 6px;
+    			text-indent: 20px;
+    			line-height: 19px;
+  			}
+  		}
+  		.time_work_in_header
+  		{
+  			width: 150px;
+    		line-height: 19px;
+  			p
+  			{
+  				color: #000000;
+  				font-family:arial;
+				font-size: 13px;
+				font-weight: normal;
+				font-style: normal;
+				margin: 3px 1px 3px 0px;
+				span
+				{
+					font-weight: bold;
+				}
+  			}
+  		}
+  		.asq_in_header:before
+  		{
+  			content: url(../img/icq.png);
+  			position: absolute;
+    		top: 4px;
+    		left: 2px;
+  		}
+  		.asq_in_header
+  		{
+  			color: #3e3935;
+  			font-family:arial;
+			font-size: 15px;
+			font-weight: normal;
+			font-style: normal;
+			width: 129px;
+    		position: relative;
+    		    min-height: 44px;
+			p
+			{
+				margin: 3px 22px 1px 24px;
+			}
+  		}
+  		.mail_in_header:before
+  		{
+  			content: url(../img/mail.png);
+  			position: absolute;
+    		top: 4px;
+    		left: 0px;
+  		}
+  		.mail_in_header
+  		{
+  			width: 129px;
+    		position: relative;
+    		min-height: 44px;
+    		a:hover
+    		{
+    			text-decoration: none;
+    		}
+  			a
+  			{
+  				color: #2b7bce;
+  			font-family:arial;
+			font-size: 15px;
+			font-weight: normal;
+			font-style: normal;
+			margin: 22px;
+    		line-height: 24px;
+    		text-decoration: underline;
+  			}
+  		}
+  		.other_address_in_header
+  		{
+  			padding: 7px 6px 14px 6px;
+  			a:hover
+  			{
+  				text-decoration: none;
+  			}
+  			a
+  			{
+  				color: #2b7bce;
+  				text-decoration: underline;
+  				font-family:arial;
+				font-size: 13px;
+				font-weight: normal;
+				font-style: normal;
+  			}
+  		}
+  		.tell_friand_in_header
+  		{
+  			position: relative;
+  			padding-top: 5px;
+  			    float: right;
+  			div
+  			{
+  				color: #75674a;
+  				font-family:arial;
+				font-size: 13px;
+				font-weight: normal;
+				font-style: normal;
+				display: inline-block;
+  			}
+  			dir
+  			{
+  				display: inline-block;
+  				li
+  				{
+  					list-style-type: none;
+    				overflow: hidden;
+    				width: 18px;
+    				display: inline-block;
+  					a
+  					{
+  						background-image: url(../img/icon_soc.png);
+  						width: 18px;
+    					height: 16px;
+    					display: block;
+    					display: block;
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
 }
 
