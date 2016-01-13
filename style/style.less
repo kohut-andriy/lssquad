@@ -281,9 +281,10 @@ header
   		.tell_friand_in_header
   		{
   			position: relative;
-  			padding-top: 5px;
-  			    float: right;
-  			div
+  			padding-top: 9px;
+  			float: right;
+  			vertical-align: middle;
+  			span
   			{
   				color: #75674a;
   				font-family:arial;
@@ -291,16 +292,24 @@ header
 				font-weight: normal;
 				font-style: normal;
 				display: inline-block;
+				vertical-align: middle;
+    			min-height: 22px;
   			}
   			dir
   			{
   				display: inline-block;
+  				font-size: 0;
+  				li:first-child
+  				{
+  					padding-left: 1px;
+  				}
   				li
   				{
   					list-style-type: none;
     				overflow: hidden;
     				width: 18px;
     				display: inline-block;
+    				padding-left: 2px;
   					a
   					{
   						background-image: url(../img/icon_soc.png);
@@ -308,6 +317,29 @@ header
     					height: 16px;
     					display: block;
     					display: block;
+    					transition: 0.5s;
+  					}
+  					a:hover
+  					{
+  						background-position-y: 16px;
+  						transition: 0.5s;
+  					}
+  					.mail_l
+  					{
+  						background-position-x: 18px;
+  					}
+  					.odnoklas_l
+  					{
+  						background-position-x: 38px;
+  					}
+  					.twit_l
+  					{
+  						background-position-x: 59px;
+  						
+  					}
+  					.fase_l
+  					{
+  						background-position-x: 80px;
   					}
   				}
   			}
@@ -315,6 +347,7 @@ header
   	}
   }
 }
+<<<<<<< HEAD
 .promo-wrapper {
 	background-color: #ece7d7;
 	padding-bottom: 20px;
@@ -571,6 +604,172 @@ header
 						text-align: right;
 						padding: 3px 3px;
 					}
+=======
+footer
+{
+	.back_for_footer
+	{
+		background-color: #292023;
+		.content_main
+		{
+			padding: 20px 0;
+			.left_block_in_footer
+			{
+				width: 682px;
+				float: left;
+				a:hover
+				{
+					text-decoration: none;
+				}
+				a
+				{
+					font-family:arial;
+					font-size: 13px;
+					font-weight: normal;
+					font-style: normal;
+					color: #caadb7;
+					text-decoration: underline;
+				}
+				p
+				{
+					line-height: 19px;
+				}
+				.fist_block_in_footer
+				{
+					li:first-child
+					{
+						padding-left: 0;
+					}
+					li
+					{
+						list-style-type: none;
+						display: inline-block;
+						padding-left: 33px;
+
+					}
+				}
+				.coll_in_footer
+				{
+					width: 192px;
+					float: left;
+					p:first-child
+					{
+						padding-top: 21px;
+					}
+					p
+					{
+						font-family:arial;
+						font-size: 13px;
+						font-weight: normal;
+						font-style: normal;
+						color: #ffe328;
+						margin: 0;
+						padding-top: 13px;
+						span
+						{
+							font-size: 18px;
+							color: #ffffff;
+							display: block;
+						}
+					}
+					section
+					{
+						padding-top: 22px;
+					}
+				}
+				.address_in_footer
+				{
+					width: 288px;
+					float: left;
+					p
+					{
+						font-family:arial;
+						font-size: 13px;
+						font-weight: normal;
+						font-style: normal;
+						color: #ffffff;
+						margin: 0;
+    					padding: 21px 0px 11px;
+    					margin-right: 12px;
+					}
+				}
+				.time_of_work_in_footer
+				{
+					float: left;
+    				width: 133px;
+					p
+					{
+						font-family:arial;
+						font-size: 13px;
+						font-weight: normal;
+						font-style: normal;
+						color: #ffffff;
+						padding: 21px 0;
+						margin: 0;
+					}
+					div
+					{
+						margin: 4px 0;
+						a:nth-child(2)
+						{
+							img
+							{
+								margin-left: 5px;
+							}
+						}
+					}
+					section
+					{
+						margin-top: 8px;
+					}
+				}
+			}
+			.right_block_in_footer
+			{
+				float: right;
+				width: 258px;
+				p
+				{
+					font-family:arial;
+					font-size: 13px;
+					font-weight: normal;
+					font-style: normal;
+					color: white;
+					text-align: right;
+    				margin: 0;
+    				padding-top: 1px;
+    				padding-bottom: 4px;
+					a:before
+  					{
+  						content: url(../img/stef_l.png);
+  						position: absolute;
+    					top: -3px;
+    					left: 3px;
+  					}
+					a:hover
+					{
+						text-decoration: underline;
+					}
+					a
+					{
+						font-family:arial;
+						font-size: 13px;
+						font-weight: normal;
+						font-style: normal;
+						color: white;
+						position: relative;
+						padding-left: 22px;
+					}
+				}
+				section
+				{
+					float: right;
+    				margin-top: 64px;
+    				img:nth-child(2)
+    				{
+    					padding-left: 3px;
+    				}
+>>>>>>> d78b65882319d3eb30f2bf05db686cf078e74394
 				}
 			}
 		}
