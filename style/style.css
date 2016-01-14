@@ -269,6 +269,31 @@ header .white_back .content_main .tell_friand_in_header dir li .twit_l {
 header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   background-position-x: 80px;
 }
+.back_for_proces {
+  background-color: #583843;
+}
+.back_for_proces .content_main dir li {
+  list-style-type: none;
+  float: left;
+  width: 172px;
+}
+.back_for_proces .content_main dir li img {
+  float: left;
+}
+.back_for_proces .content_main dir li h4 {
+  font-family: arial;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+.back_for_proces .content_main dir li p {
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  color: #b99da7;
+}
 footer .back_for_footer {
   background-color: #292023;
 }
