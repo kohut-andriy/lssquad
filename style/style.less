@@ -24,10 +24,16 @@
 /*========================================================
                     header
 =========================================================*/
+.hui
+{
+	width: 200px;
+	height: 200px;
+}
 .content_main
 {
-	width: 940px;
+	width: 960px;
 	margin: auto;
+	padding: 0 10px;
 	
 }
 * {
@@ -45,11 +51,176 @@ a
 {
 	text-decoration: none;
 }
+.fixed
+{
+	position: fixed;
+    width: 100%;
+    z-index: 20;
+}
 header
 {
   .back_black
   {
   background-color: #2b2723;
+  	.button_hover
+  	{
+  		float: left;
+    	width: 141px;
+   		padding: 12px 15px;
+    	background-color: white;
+    	border-top-left-radius: 5px;
+    	border-top-right-radius: 5px;
+    	color: #dc3806;
+    	font-family:arial;
+		font-size: 15px;
+		font-weight: normal;
+		font-style: normal;
+		display: none;
+		.count_in_header
+		{
+			color: #ffffff;
+    		font-family:arial;
+			font-size: 13px;
+			font-weight: normal;
+			font-style: normal;
+			background-color: #dc3806;
+			border-radius: 2px;
+			margin-left: 5px;
+    		padding: 4px 4px 1px;
+		}
+  		#owl-carousel-first
+  		{
+  			display: none;
+  			position: absolute;
+  			width: 952px;
+  			left: 9px;
+  			right: 10px;
+  			top: 40px;
+    		background: white;
+    		z-index: 99999;
+    		padding: 27px 60px;
+    		-webkit-box-shadow: 2px 25px 44px -7px rgba(0,0,0,0.75);
+	        -moz-box-shadow: 2px 25px 44px -7px rgba(0,0,0,0.75);
+    		box-shadow: 2px 25px 44px -7px rgba(0, 0, 0, 0.75);
+    		border-radius: 2px;
+    		border-right: 1px double #bbb7b4;
+    		border-bottom: 1px double #bbb7b4;
+    		border-left: 1px double #bbb7b4;
+    		border-top-left-radius: 0;
+    		overflow: hidden;
+    		.owl-prev
+    		{
+    			position: absolute;
+    			top: 20px;
+    			left: 15px;
+    			font-size: 30px;
+    			color: #8e7980;
+    			border: 1px double #bbb7b4;
+   				padding: 25px 5px;
+   				margin: 85px 0 125px;
+    		box-shadow: -86px 23px 22px 125px #ffffff;
+    		}
+    		.owl-next
+    		{
+    			position: absolute;
+    			top: 105px;
+    			right: 15px;
+    			font-size: 30px;
+    			color: #8e7980;
+    			border: 1px double #bbb7b4;
+   				padding: 25px 5px;
+   				box-shadow: 93px 23px 22px 125px #ffffff;
+    		}
+    		.disabled
+    		{
+    			border: 1px double #ece7d7;
+    			color: #ece7d7;
+    		}
+    		.item
+    		{
+    			width: 188px;
+    			text-align: center;
+    			margin-left: 20px;
+    			img
+    			{
+    				width: auto;
+    				margin-left: 50px;
+    			}
+    			a:hover
+    			{
+    				text-decoration: none;
+    			}
+    			a
+    			{
+    				color: #2b7bce;
+    				font-family:arial;
+					font-size: 13px;
+					font-weight: normal;
+					font-style: normal;
+					text-decoration: underline;
+    			}
+    			.rating
+    			{
+    				unicode-bidi: bidi-override;
+  					direction: rtl;
+  					cursor: pointer;
+  					span
+  					{
+  						display: inline-block;
+  						position: relative;
+  						width: 1.1em;
+  						color: #e0d8bf;
+   						content: "\2605";
+  					} 
+  					span:hover:before, span:hover ~ span:before
+  					{
+  						content: "\2605";
+   						position: absolute;
+   						color: #f89500;
+   						border: none;
+  					}
+  					
+    			}
+    			.price_plas_button_in_header
+    			{
+    				display: inline-block;
+    				vertical-align: middle;
+    				.price_in_header
+  					{
+  						font-family:arial;
+						font-size: 20px;
+						font-weight: bold;
+						font-style: normal;
+						color: #000000;
+						display: inline-block;
+						height: 41px;
+    					line-height: 40px;
+  					}
+  					button
+  					{
+  						background-image: url(../img/bey_trash.png);
+    					width: 30px;
+    					height: 26px;
+    					border: none;
+    					line-height: 40px;
+    					margin-top: -7px;
+    					vertical-align: middle;
+  					}
+    			}
+  				small
+  				{
+  					display: block;
+   					width: 120px;
+    				margin: auto;
+    				font-family:arial;
+					font-size: 13px;
+					font-weight: normal;
+					font-style: normal;
+					color: #99958a;
+  				}
+    		}
+  		}
+  	}
    	.content_main
 	{
 		position: relative;
@@ -103,22 +274,43 @@ header
 		.exit
 		{
 			color: #ffe328;
-    		border-bottom: #ffe328 dashed 1px;
+  			border-bottom: #ffe328 dashed 1px;
     		float: left;
-    		font-family:arial;
-			font-size: 15px;
-			font-weight: normal;
-			font-style: normal;
-			padding: 0px;
-    		margin: 10px 0 10px 139px;
+    		font-family: arial;
+    		font-size: 15px;
+    		font-weight: normal;
+    		font-style: normal;
+    		padding: 0px;
+   			margin: 10px 0px 10px 125px;
 		}
-
+		.trash_1:before
+		{
+			content: url(../img/trash.png);
+			position: absolute;
+    		top: 14px;
+    		right: 61%;
+		}
 		.trash:before
 		{
 			content: url(../img/trash.png);
 			position: absolute;
     		top: 15px;
     		right: 79%;
+		}
+		.trash_1
+		{
+			position: absolute;
+    		right: 0;
+    		top: 0;
+    		background-color: #4a3f32;
+    		padding: 15px 26px 21px 32px;
+    		color: white;
+    		border-bottom-left-radius: 5px;
+    		border-bottom-right-radius: 5px;
+    		font-family:arial;
+			font-size: 15px;
+			font-weight: normal;
+			font-style: normal;
 		}
 		.trash
 		{
@@ -614,25 +806,35 @@ header
 	background-color: #583843;
 	.content_main
 	{
-		padding: 34px 0 74px;
+		padding: 22px 0 57px;
 		dir
 		{
 			li
 			{
 				list-style-type: none;
-				float: left;
-				width: 172px;
-				img
+    			float: left;
+    			width: 172px;
+    			margin-right: 20px;
+				section
 				{
-					float: left;
-				}
-				h4
-				{
-					font-family:arial;
-					font-size: 18px;
-					font-weight: normal;
-					font-style: normal;
-					color: #ffffff;
+					line-height: 73px;
+    				padding-left: 11px;
+    				padding-bottom: 14px;
+					img
+					{
+						display: inline-block;
+						vertical-align: middle;
+					}
+					h4
+					{
+						font-family:arial;
+						font-size: 18px;
+						font-weight: normal;
+						font-style: normal;
+						color: #ffffff;
+						display: inline-block;
+						padding-left: 5px;
+					}
 				}
 				p
 				{
@@ -641,6 +843,9 @@ header
 					font-weight: normal;
 					font-style: normal;
 					color: #b99da7;
+					display: block;
+					line-height: 19px;
+					padding-left: 10px;
 				}
 			}
 		}
@@ -658,6 +863,7 @@ footer
 			{
 				width: 682px;
 				float: left;
+				margin-left: 10px;
 				a:hover
 				{
 					text-decoration: none;
@@ -769,6 +975,7 @@ footer
 			{
 				float: right;
 				width: 258px;
+				margin-right: 10px;
 				p
 				{
 					font-family:arial;

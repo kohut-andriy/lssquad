@@ -26,9 +26,14 @@
 /*========================================================
                     header
 =========================================================*/
+.hui {
+  width: 200px;
+  height: 200px;
+}
 .content_main {
-  width: 940px;
+  width: 960px;
   margin: auto;
+  padding: 0 10px;
 }
 * {
   box-sizing: border-box;
@@ -43,8 +48,155 @@ dir {
 a {
   text-decoration: none;
 }
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
 header .back_black {
   background-color: #2b2723;
+}
+header .back_black .button_hover {
+  float: left;
+  width: 141px;
+  padding: 12px 15px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #dc3806;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  display: none;
+}
+header .back_black .button_hover .count_in_header {
+  color: #ffffff;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #dc3806;
+  border-radius: 2px;
+  margin-left: 5px;
+  padding: 4px 4px 1px;
+}
+header .back_black .button_hover #owl-carousel-first {
+  display: none;
+  position: absolute;
+  width: 952px;
+  left: 9px;
+  right: 10px;
+  top: 40px;
+  background: white;
+  z-index: 99999;
+  padding: 27px 60px;
+  -webkit-box-shadow: 2px 25px 44px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 25px 44px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 25px 44px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  border-right: 1px double #bbb7b4;
+  border-bottom: 1px double #bbb7b4;
+  border-left: 1px double #bbb7b4;
+  border-top-left-radius: 0;
+  overflow: hidden;
+}
+header .back_black .button_hover #owl-carousel-first .owl-prev {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  font-size: 30px;
+  color: #8e7980;
+  border: 1px double #bbb7b4;
+  padding: 25px 5px;
+  margin: 85px 0 125px;
+  box-shadow: -86px 23px 22px 125px #ffffff;
+}
+header .back_black .button_hover #owl-carousel-first .owl-next {
+  position: absolute;
+  top: 105px;
+  right: 15px;
+  font-size: 30px;
+  color: #8e7980;
+  border: 1px double #bbb7b4;
+  padding: 25px 5px;
+  box-shadow: 93px 23px 22px 125px #ffffff;
+}
+header .back_black .button_hover #owl-carousel-first .disabled {
+  border: 1px double #ece7d7;
+  color: #ece7d7;
+}
+header .back_black .button_hover #owl-carousel-first .item {
+  width: 188px;
+  text-align: center;
+  margin-left: 20px;
+}
+header .back_black .button_hover #owl-carousel-first .item img {
+  width: auto;
+  margin-left: 50px;
+}
+header .back_black .button_hover #owl-carousel-first .item a:hover {
+  text-decoration: none;
+}
+header .back_black .button_hover #owl-carousel-first .item a {
+  color: #2b7bce;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+}
+header .back_black .button_hover #owl-carousel-first .item .rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  cursor: pointer;
+}
+header .back_black .button_hover #owl-carousel-first .item .rating span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  color: #e0d8bf;
+  content: "\2605";
+}
+header .back_black .button_hover #owl-carousel-first .item .rating span:hover:before,
+header .back_black .button_hover #owl-carousel-first .item .rating span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: #f89500;
+  border: none;
+}
+header .back_black .button_hover #owl-carousel-first .item .price_plas_button_in_header {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .back_black .button_hover #owl-carousel-first .item .price_plas_button_in_header .price_in_header {
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  display: inline-block;
+  height: 41px;
+  line-height: 40px;
+}
+header .back_black .button_hover #owl-carousel-first .item .price_plas_button_in_header button {
+  background-image: url(../img/bey_trash.png);
+  width: 30px;
+  height: 26px;
+  border: none;
+  line-height: 40px;
+  margin-top: -7px;
+  vertical-align: middle;
+}
+header .back_black .button_hover #owl-carousel-first .item small {
+  display: block;
+  width: 120px;
+  margin: auto;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  color: #99958a;
 }
 header .back_black .content_main {
   position: relative;
@@ -94,13 +246,33 @@ header .back_black .content_main .exit {
   font-weight: normal;
   font-style: normal;
   padding: 0px;
-  margin: 10px 0 10px 139px;
+  margin: 10px 0px 10px 125px;
+}
+header .back_black .content_main .trash_1:before {
+  content: url(../img/trash.png);
+  position: absolute;
+  top: 14px;
+  right: 61%;
 }
 header .back_black .content_main .trash:before {
   content: url(../img/trash.png);
   position: absolute;
   top: 15px;
   right: 79%;
+}
+header .back_black .content_main .trash_1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #4a3f32;
+  padding: 15px 26px 21px 32px;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
 }
 header .back_black .content_main .trash {
   position: absolute;
@@ -544,22 +716,31 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   background-color: #583843;
 }
 .back_for_proces .content_main {
-  padding: 34px 0 74px;
+  padding: 22px 0 57px;
 }
 .back_for_proces .content_main dir li {
   list-style-type: none;
   float: left;
   width: 172px;
+  margin-right: 20px;
 }
-.back_for_proces .content_main dir li img {
-  float: left;
+.back_for_proces .content_main dir li section {
+  line-height: 73px;
+  padding-left: 11px;
+  padding-bottom: 14px;
 }
-.back_for_proces .content_main dir li h4 {
+.back_for_proces .content_main dir li section img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.back_for_proces .content_main dir li section h4 {
   font-family: arial;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
+  display: inline-block;
+  padding-left: 5px;
 }
 .back_for_proces .content_main dir li p {
   font-family: arial;
@@ -567,6 +748,9 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   font-weight: normal;
   font-style: normal;
   color: #b99da7;
+  display: block;
+  line-height: 19px;
+  padding-left: 10px;
 }
 footer .back_for_footer {
   background-color: #292023;
@@ -577,6 +761,7 @@ footer .back_for_footer .content_main {
 footer .back_for_footer .content_main .left_block_in_footer {
   width: 682px;
   float: left;
+  margin-left: 10px;
 }
 footer .back_for_footer .content_main .left_block_in_footer a:hover {
   text-decoration: none;
@@ -663,6 +848,7 @@ footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_foo
 footer .back_for_footer .content_main .right_block_in_footer {
   float: right;
   width: 258px;
+  margin-right: 10px;
 }
 footer .back_for_footer .content_main .right_block_in_footer p {
   font-family: arial;
