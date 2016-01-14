@@ -27,14 +27,14 @@
                     header
 =========================================================*/
 .content_main {
-  width: 940px;
+  width: 960px;
   margin: auto;
+  padding: 0 10px;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial;
 }
 dir {
   padding: 0;
@@ -288,7 +288,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 }
 .promo-wrapper {
   background-color: #ece7d7;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 .promo-wrapper .promo h1 {
   margin: 0;
@@ -539,6 +539,328 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   width: 96px;
   text-align: right;
   padding: 3px 3px;
+}
+.offers-wrapper {
+  width: 100%;
+}
+.offers-wrapper .offers {
+  background-color: #fff;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+.offers-wrapper .offers nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.offers-wrapper .offers nav ul {
+  list-style: none;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #c5bdb4;
+}
+.offers-wrapper .offers nav ul li {
+  display: block;
+  float: left;
+}
+.offers-wrapper .offers nav ul li a {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 12px 0;
+  width: 186px;
+  text-transform: uppercase;
+  border-right: 1px solid #c5bdb4;
+  display: block;
+  color: #000;
+}
+.offers-wrapper .offers nav ul li:last-child a:last-child {
+  border-right: none;
+}
+.offers-wrapper .offers nav ul li.active {
+  background-color: #dc3806;
+  color: #fff;
+}
+.offers-wrapper .offers nav ul li.active a {
+  color: #fff;
+}
+.offers-wrapper .offers nav ul li:not(.active) a:hover {
+  color: #dc3806;
+}
+.offers-wrapper .offers .offers-products {
+  display: block;
+  margin: auto;
+  list-style: none;
+  text-align: center;
+}
+.offers-wrapper .offers .offers-products li {
+  display: inline-block;
+  width: 186px;
+  vertical-align: top;
+}
+.offers-wrapper .offers .offers-products li figure {
+  margin: 0;
+  padding: 5px;
+  padding-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.4;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.offers-wrapper .offers .offers-products li figure img {
+  margin-bottom: 12px;
+}
+.offers-wrapper .offers .offers-products li figure .discount {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  background-color: #dc3706;
+  color: #fff;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  display: none;
+}
+.offers-wrapper .offers .offers-products li figure a {
+  text-decoration: underline;
+  min-height: 65px;
+  display: block;
+  margin-bottom: 10px;
+  color: #2b7bce;
+}
+.offers-wrapper .offers .offers-products li figure .price {
+  font-size: 18px;
+  font-family: 'ALSRubl';
+  display: inline-block;
+  padding: 2px 9px;
+  background-color: #ffe328;
+  z-index: 1;
+  position: relative;
+}
+.offers-wrapper .offers .offers-products li figure .price p {
+  z-index: 999999;
+}
+.offers-wrapper .offers .offers-products li figure .price span {
+  font-weight: bold;
+}
+.offers-wrapper .offers .offers-products li figure .price:before,
+.offers-wrapper .offers .offers-products li figure .price:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-color: #ffe328;
+  position: absolute;
+  top: 3px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.offers-wrapper .offers .offers-products li figure .price:before {
+  left: -6px;
+}
+.offers-wrapper .offers .offers-products li figure .price:after {
+  right: -6px;
+}
+.offers-wrapper .offers .offers-products li figure:hover {
+  border-color: #dc3806;
+}
+.offers-wrapper .offers .offers-products li figure:hover .discount {
+  display: block;
+}
+.services-wrapper {
+  width: 100%;
+  background-color: #3c3329;
+}
+.services-wrapper .services {
+  padding: 41px 10px;
+  padding-bottom: 15px;
+}
+.services-wrapper .services h2 {
+  font-size: 27px;
+  color: #cebd9a;
+  text-align: center;
+  margin-bottom: 34px;
+  font-weight: normal;
+  word-spacing: 3px;
+}
+.services-wrapper .services ul {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.services-wrapper .services ul li:last-child {
+  margin-right: 0;
+}
+.services-wrapper .services ul li {
+  display: inline-block;
+  width: 171px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+.services-wrapper .services ul li a {
+  display: block;
+}
+.services-wrapper .services ul li .icon {
+  background: url(../img/service-sprite-2.png);
+  width: 85px;
+  height: 72px;
+  margin-bottom: 14px;
+}
+.services-wrapper .services ul li .icon.icon-1 {
+  background-position: 0 0;
+}
+.services-wrapper .services ul li .icon.icon-2 {
+  background-position-x: -85px;
+}
+.services-wrapper .services ul li .icon.icon-3 {
+  background-position-x: -170px;
+}
+.services-wrapper .services ul li .icon.icon-4 {
+  background-position-x: -255px;
+}
+.services-wrapper .services ul li .icon.icon-5 {
+  background-position-x: -340px;
+}
+.services-wrapper .services ul li p {
+  color: #ece7d7;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.services-wrapper .services ul li .service-descr {
+  text-decoration: underline;
+  color: #68c8ff;
+  font-size: 15px;
+  display: table;
+  min-height: 40px;
+  line-height: 1.3;
+}
+.services-wrapper .services ul li .service-descr span {
+  display: table-cell;
+  vertical-align: bottom;
+}
+.services-wrapper .services ul li a:hover .icon {
+  background-position-y: -75px;
+}
+.services-wrapper .services ul li a:hover .service-descr {
+  color: #dc3806;
+}
+.products-wrapper {
+  width: 100%;
+}
+.products-wrapper .products {
+  background-color: #fff;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 68px;
+}
+.products-wrapper .products nav {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.products-wrapper .products nav ul {
+  list-style: none;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #c5bdb4;
+}
+.products-wrapper .products nav ul li {
+  display: block;
+  float: left;
+}
+.products-wrapper .products nav ul li a {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 12px 0;
+  width: 186px;
+  text-transform: uppercase;
+  border-right: 1px solid #c5bdb4;
+  display: block;
+  color: #000;
+}
+.products-wrapper .products nav ul li:last-child a:last-child {
+  border-right: none;
+}
+.products-wrapper .products nav ul li.active {
+  background-color: #dc3806;
+  color: #fff;
+}
+.products-wrapper .products nav ul li.active a {
+  color: #fff;
+}
+.products-wrapper .products nav ul li:not(.active) a:hover {
+  color: #dc3806;
+}
+.products-wrapper .products .products-items {
+  display: block;
+  margin: auto;
+  list-style: none;
+  text-align: center;
+}
+.products-wrapper .products .products-items li {
+  display: inline-block;
+  width: 186px;
+  vertical-align: top;
+}
+.products-wrapper .products .products-items li figure {
+  margin: 0;
+  padding: 5px;
+  padding-bottom: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.products-wrapper .products .products-items li figure img {
+  margin-bottom: 12px;
+}
+.products-wrapper .products .products-items li figure a {
+  text-decoration: underline;
+  min-height: 10px;
+  display: block;
+  color: #2b7bce;
+}
+.products-wrapper .products .products-items li figure .price {
+  font-size: 18px;
+  font-family: 'ALSRubl';
+  display: inline-block;
+  padding: 4px 6px;
+  background-color: #ffe328;
+  z-index: 1;
+  position: relative;
+  bottom: -15px;
+}
+.products-wrapper .products .products-items li figure .price p {
+  z-index: 999999;
+}
+.products-wrapper .products .products-items li figure .price span {
+  font-weight: bold;
+}
+.products-wrapper .products .products-items li figure .price:before,
+.products-wrapper .products .products-items li figure .price:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-color: #ffe328;
+  position: absolute;
+  top: 4px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.products-wrapper .products .products-items li figure .price:before {
+  left: -6px;
+}
+.products-wrapper .products .products-items li figure .price:after {
+  right: -6px;
+}
+.products-wrapper .products .products-items li figure:hover {
+  border-color: #dc3806;
+}
+.products-wrapper .products .products-items li figure:hover .discount {
+  display: block;
 }
 footer .back_for_footer {
   background-color: #292023;
