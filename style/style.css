@@ -581,6 +581,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   text-align: center;
   padding-top: 4px;
   line-height: 1;
+  cursor: pointer;
 }
 .promo-wrapper .promo .content-wrapper .search-buts .button span {
   font-size: 13px;
@@ -772,6 +773,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 .offers-wrapper .offers .offers-products li figure {
   margin: 0;
   padding: 5px;
+  display: block;
   padding-bottom: 16px;
   font-size: 15px;
   line-height: 1.4;
@@ -809,6 +811,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   background-color: #ffe328;
   z-index: 1;
   position: relative;
+  cursor: pointer;
 }
 .offers-wrapper .offers .offers-products li figure .price p {
   z-index: 999999;
@@ -1003,6 +1006,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   z-index: 1;
   position: relative;
   bottom: -15px;
+  cursor: pointer;
 }
 .products-wrapper .products .products-items li figure .price p {
   z-index: 999999;
@@ -1033,9 +1037,18 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 .products-wrapper .products .products-items li figure:hover .discount {
   display: block;
 }
+.products-wrapper .products .products-items li figure:hover a {
+  color: #dc3806;
+}
 .articles-wrapper {
   width: 100%;
   background-color: #f6f5f0;
+}
+.articles-wrapper a {
+  text-decoration: underline;
+}
+.articles-wrapper a:hover {
+  text-decoration: none;
 }
 .articles-wrapper .articles {
   padding-top: 42px;
@@ -1061,7 +1074,6 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   margin-top: 25px;
 }
 .articles-wrapper .articles h3 a {
-  text-decoration: underline;
   margin-top: 9px;
   margin-bottom: 7px;
   display: block;
@@ -1089,7 +1101,6 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   display: block;
   margin-bottom: 19px;
   line-height: 1.5;
-  text-decoration: underline;
   color: #2b7bce;
 }
 .articles-wrapper .articles .news-block {
@@ -1117,7 +1128,6 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   margin-top: 12px;
   display: block;
   line-height: 1.25;
-  text-decoration: underline;
   color: #2b7bce;
 }
 .articles-wrapper .articles .news-block .main .date {
@@ -1151,9 +1161,15 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   width: 100%;
   background-color: #f6f5f0;
 }
+.comments-wrapper a {
+  text-decoration: underline;
+}
+.comments-wrapper a:hover {
+  text-decoration: none;
+}
 .comments-wrapper .comments {
   padding-top: 42px;
-  padding-bottom: 42px;
+  padding-bottom: 64px;
 }
 .comments-wrapper .comments .comments-list {
   width: 768px;
@@ -1232,7 +1248,6 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 }
 .comments-wrapper .comments .help-box ul li a {
   color: #2b7bce;
-  text-decoration: underline;
   line-height: 1.5;
 }
 .comments-wrapper .comments .help-box ul li:last-child {
@@ -1249,10 +1264,10 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 .comments-wrapper .comments .help-box .help-link a {
   color: #2b7bce;
   font-size: 15px;
-  text-decoration: underline;
 }
 .back_for_proces {
   background-color: #583843;
+  box-shadow: inset 0 24px 42px -15px #34141f;
 }
 .back_for_proces .content_main {
   padding: 22px 0 57px;
@@ -1290,6 +1305,187 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   display: block;
   line-height: 19px;
   padding-left: 10px;
+}
+.back_for_BRANDS {
+  color: white;
+}
+.back_for_BRANDS .content_main {
+  padding: 40px 10px 81px;
+}
+.back_for_BRANDS .content_main h2 {
+  font-family: arial;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  color: #583843;
+  text-align: center;
+}
+.back_for_BRANDS .content_main .logo_partner {
+  margin: 25px 0px;
+}
+.back_for_BRANDS .content_main .logo_partner li:first-child {
+  padding-left: 0;
+}
+.back_for_BRANDS .content_main .logo_partner li:last-child {
+  padding-left: 76px;
+}
+.back_for_BRANDS .content_main .logo_partner li {
+  display: inline-block;
+  padding-left: 77px;
+}
+.back_for_BRANDS .content_main .logo_partner li img {
+  display: inline-block;
+}
+.back_for_BRANDS .content_main .list_of_shit {
+  -webkit-column-count: 7;
+}
+.back_for_BRANDS .content_main .list_of_shit li {
+  line-height: 17px;
+  padding-top: 3px;
+}
+.back_for_BRANDS .content_main .list_of_shit li h3 {
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  color: #583843;
+}
+.back_for_BRANDS .content_main .list_of_shit li a:hover {
+  text-decoration: none;
+}
+.back_for_BRANDS .content_main .list_of_shit li a {
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  color: #2b7bce;
+  text-decoration: underline;
+}
+.back_for_SUBSCRIBE {
+  background: -moz-linear-gradient(269deg, #fff63b 0%, #ebcf14 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff63b), color-stop(100%, #ebcf14));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(269deg, #fff63b 0%, #ebcf14 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(269deg, #fff63b 0%, #ebcf14 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(269deg, #fff63b 0%, #ebcf14 100%);
+  /* ie10+ */
+  background: linear-gradient(181deg, #fff63b 0%, #ebcf14 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff63b', endColorstr='#ebcf14', GradientType=0);
+  /* ie6-9 */
+}
+.back_for_SUBSCRIBE .content_main {
+  padding: 13px 10px 8px;
+}
+.back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE {
+  float: left;
+  list-style-type: none;
+  margin-right: 140px;
+}
+.back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li:first-child {
+  padding-left: 0;
+}
+.back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li {
+  display: inline-block;
+  padding-left: 5px;
+}
+.back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li a {
+  display: block;
+  background: url(../img/soc_s_subscribe.png);
+  width: 40px;
+  height: 36px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li a:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+.back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li .f_in_SUBSCRIBE {
+  background-position-x: 90px;
+}
+.back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li .twit_in_SUBSCRIBE {
+  background-position-x: 40px;
+}
+.back_for_SUBSCRIBE .content_main .text_in_SUBSCRIBE {
+  float: left;
+  width: 200px;
+  margin-top: -2px;
+}
+.back_for_SUBSCRIBE .content_main .text_in_SUBSCRIBE p {
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  padding-left: 10px;
+  line-height: 19px;
+}
+.back_for_SUBSCRIBE .content_main .send_mail {
+  float: right;
+}
+.back_for_SUBSCRIBE .content_main .send_mail input {
+  color: #000000;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  margin-right: 6px;
+  width: 340px;
+  padding: 5px;
+}
+.back_for_SUBSCRIBE .content_main .send_mail input[placeholder] {
+  color: #000000;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+.back_for_SUBSCRIBE .content_main .send_mail input::-moz-placeholder {
+  color: #000000;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+.back_for_SUBSCRIBE .content_main .send_mail input:-moz-placeholder {
+  color: #000000;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+.back_for_SUBSCRIBE .content_main .send_mail input:-ms-input-placeholder {
+  color: #000000;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+.back_for_SUBSCRIBE .content_main .send_mail button:hover {
+  background: linear-gradient(180deg, #3f8100, #6cae16);
+}
+.back_for_SUBSCRIBE .content_main .send_mail button {
+  background: linear-gradient(180deg, #6cae16, #3f8100);
+  line-height: 29px;
+  box-shadow: 0 1px 1px #356b00;
+  border: none;
+  border-top-right-radius: 1px;
+  font-size: 14px;
+  border-bottom-right-radius: 1px;
+  color: #fff;
+  font-family: arial;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 3px;
+  width: 109px;
 }
 footer .back_for_footer {
   background-color: #292023;
