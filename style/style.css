@@ -1147,6 +1147,110 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   height: 36px;
   border-bottom: 1px solid #dfdac9;
 }
+.comments-wrapper {
+  width: 100%;
+  background-color: #f6f5f0;
+}
+.comments-wrapper .comments {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.comments-wrapper .comments .comments-list {
+  width: 768px;
+  display: inline-block;
+  float: left;
+}
+.comments-wrapper .comments .comments-list h2 {
+  color: #583843;
+  font-size: 28px;
+  text-decoration: underline;
+  font-weight: normal;
+  margin-bottom: 26px;
+}
+.comments-wrapper .comments .comments-list ul {
+  list-style: none;
+}
+.comments-wrapper .comments .comments-list ul li {
+  text-align: left;
+  width: 172px;
+  margin-right: 20px;
+  display: inline-block;
+  float: left;
+}
+.comments-wrapper .comments .comments-list ul li figure {
+  margin: 0;
+}
+.comments-wrapper .comments .comments-list ul li figure img {
+  border-radius: 50%;
+  max-width: 76px;
+  margin-bottom: 11px;
+}
+.comments-wrapper .comments .comments-list ul li figure p {
+  font-size: 13px;
+  color: #583843;
+}
+.comments-wrapper .comments .comments-list ul li figure p span {
+  font-weight: bold;
+}
+.comments-wrapper .comments .comments-list q {
+  quotes: "" "";
+  color: #bfbaa8;
+  position: relative;
+  display: inline-block;
+}
+.comments-wrapper .comments .comments-list q p {
+  color: #000;
+  font-size: 13px;
+  line-height: 1.5;
+  padding-right: 6px;
+}
+.comments-wrapper .comments .comments-list q:before {
+  content: url(../img/quote.png);
+}
+.comments-wrapper .comments .help-box {
+  display: inline-block;
+  max-width: 172px;
+}
+.comments-wrapper .comments .help-box h3 {
+  color: #583843;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: normal;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+.comments-wrapper .comments .help-box ul {
+  list-style: none;
+  border-bottom: 1px solid #dfdac9;
+}
+.comments-wrapper .comments .help-box ul li {
+  font-size: 13px;
+  color: #583843;
+  padding-right: 8px;
+  margin-bottom: 23px;
+  line-height: 1.1;
+}
+.comments-wrapper .comments .help-box ul li a {
+  color: #2b7bce;
+  text-decoration: underline;
+  line-height: 1.5;
+}
+.comments-wrapper .comments .help-box ul li:last-child {
+  margin-bottom: 17px;
+}
+.comments-wrapper .comments .help-box .help-link {
+  margin-top: 15px;
+}
+.comments-wrapper .comments .help-box .help-link img {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.comments-wrapper .comments .help-box .help-link a {
+  color: #2b7bce;
+  font-size: 15px;
+  text-decoration: underline;
+}
 .back_for_proces {
   background-color: #583843;
 }
