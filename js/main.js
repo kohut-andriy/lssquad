@@ -9,12 +9,12 @@ $('#owl-carousel_sec').owlCarousel({
    			loop:true,
    			center:true,
   			//autoplay:true,
+        autowidth: true,
     		autoplayTimeout:5000,
     		autowidth:true,
     		items:1,
     		navigation: true,
     		controls: true,
-    		autiheight:true
 		});
 
 $('.button_hover').hover(function (){
