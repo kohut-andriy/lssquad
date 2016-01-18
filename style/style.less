@@ -578,7 +578,7 @@ header
 						display: block;
 					}
 					}
-					li:after {
+					li:not(:first-child):after {
 						content: "";
 						width: 9px;
 						height: 15px;
@@ -596,6 +596,7 @@ header
 					font-size: 15px;
 					letter-spacing: normal;
 					font-weight: normal;
+					color: #fff;
 					a {
 						line-height: 45px;
 					}
@@ -828,7 +829,7 @@ header
 						font-weight: bold;
 						font-size: 12px;
 						padding: 12px 0;
-						max-width: 186px;
+						width: 186px;
 						text-transform: uppercase;
 						display: block;
 						color: #000;
@@ -1486,6 +1487,7 @@ header
 		.list_of_shit
 		{
 			 column-count: 7;
+			 -webkit-column-count: 7;
 			li
 			{
 				line-height: 17px;
@@ -1724,10 +1726,29 @@ footer
 				}
 				.address_in_footer
 				{
-					width: 288px;
+					width: 450px;
 					float: left;
-					p
+					font-family:arial;
+					font-size: 13px;
+					font-weight: normal;
+					font-style: normal;
+					color: #ffffff;
+					.left_block
 					{
+						width: 288px;
+						float: left;
+						font-family:arial;
+						font-size: 13px;
+						font-weight: normal;
+						font-style: normal;
+						color: #ffffff;
+						margin: 0;
+    					padding: 21px 24px 0px 0px;
+					}
+					.right_block
+					{
+						width: 133px;
+						float: left;
 						font-family:arial;
 						font-size: 13px;
 						font-weight: normal;
@@ -1735,13 +1756,18 @@ footer
 						color: #ffffff;
 						margin: 0;
     					padding: 21px 0px 11px;
-    					margin-right: 12px;
+    					margin-right: 12px;	
 					}
 				}
 				.time_of_work_in_footer
 				{
 					float: left;
-    				width: 133px;
+    				.left_block_s
+					{
+						width: 288px;
+						float: left;
+						padding: 12px 0;
+					}
 					p
 					{
 						font-family:arial;
@@ -1752,9 +1778,18 @@ footer
 						padding: 21px 0;
 						margin: 0;
 					}
-					div
+					section
 					{
-						margin: 4px 0;
+						margin-top: 8px;
+					}
+				}
+				.right_block_s
+					{
+						width: 133px;
+						float: left;
+						div
+					{
+						margin: 3px 0;
 						a:nth-child(2)
 						{
 							img
@@ -1762,12 +1797,8 @@ footer
 								margin-left: 5px;
 							}
 						}
+					}	
 					}
-					section
-					{
-						margin-top: 8px;
-					}
-				}
 			}
 			.right_block_in_footer
 			{
@@ -1830,6 +1861,163 @@ footer
   padding-right: 15px;
   padding-left: 15px;
  }
+
+header
+{
+  .back_black
+  {
+  	.button_hover 
+  	{
+  		#owl-carousel-first
+  		{
+  			width: 100%;
+  			left: -1px;
+  		}
+  	}
+   	.content_main
+	{
+
+		nav
+		{    
+			dir
+			 {
+			 	li:before
+			 	{
+			 		left: -7px;
+			 	}
+				li
+				{padding: 6px 8px 4px 8px;
+
+					a
+					{
+
+					}
+				}
+			}
+		}
+		.exit
+		{
+			margin: 10px 0px 10px 34px;
+		}
+		.trash
+		{
+			font-size: 13px;
+			padding: 17px 14px 21px 38px;
+			font-size: 13px;
+			right: 0px;
+		}
+	}
+  }
+  .white_back
+  {
+
+  	.content_main
+  	{
+  		.logo_in_header
+  		{
+  			margin: 20px 8px 27px 3px;
+  			img
+  			{
+  				width: 134px;
+  			}
+  		}
+  		.coll_in_header
+  		{
+  			width: 150px;
+  			p
+  			{
+
+				span
+				{
+					font-size: 17px;
+    				display: block;
+    				padding-top: 3px;
+				}
+  			}
+  		}
+  		
+  		.for_planshet
+  		{
+  			width: 300px;
+    		float: left;
+  			.address_in_header:before
+  			{
+  				top: 6px;
+  			}
+  			.address_in_header
+  			{
+  				width: 315px;
+  				p
+  				{
+  					margin: 5px 8px;
+  				}
+  			}
+  		.time_work_in_header
+  		{
+  			width: 100%;
+  			p
+  			{
+  				margin: 5px 4px 0px 6px;
+  			}
+  		}
+  		}
+  		.asq_in_header:before
+  		{
+  			top: 6px;
+    		left: 25px;
+  		}
+  		.asq_in_header
+  		{
+  			width: 150px;
+			p
+			{
+				margin: 5px 8px 1px 47px;
+			}
+  		}
+  		.mail_in_header:before
+  		{
+  			left: 1px;
+  		}
+  		.mail_in_header
+  		{
+  			width: 134px;
+    		position: relative;
+    		min-height: 44px;
+  			a
+  			{
+  				margin: 23px;
+    			line-height: 27px;
+  			}
+  		}
+  		.other_address_in_header
+  		{
+  			padding: 2px 4px 13px 152px;
+  		}
+  		.tell_friand_in_header
+  		{
+  			padding-top: 11px;
+  			span
+  			{
+  				margin-right: 4px;
+  			}
+  			dir
+  			{
+
+  				li:last-child
+  				{
+  					width: 16px;
+  				}
+  				li
+  				{
+  					width: 31px;
+  					padding-left: 0;
+  					overflow: inherit;
+  				}
+  			}
+  		}
+  	}
+  }
+}
 
 .promo-wrapper {
 		.promo {
@@ -2372,6 +2560,190 @@ footer
 				a {
 					color: #2b7bce;
 					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+.back_for_BRANDS
+{
+	color: white;
+	.content_main
+	{
+		padding: 40px 0 81px;
+		h2
+		{
+
+		}
+		.logo_partner
+		{
+			margin: 25px 0px;
+			li:first-child
+			{
+			}
+			li:last-child
+			{
+				padding-left: 25px;
+			}
+			li
+			{ 
+				padding-left: 25px;
+				img
+				{
+
+				}
+			}
+		}
+		.list_of_shit
+		{
+			 -webkit-column-count: 7;
+			li
+			{
+
+				h3
+				{
+
+				}
+				a:hover
+				{
+
+				}
+				a
+				{
+
+				}
+			}
+		}
+	}
+}
+.back_for_SUBSCRIBE
+{
+	.content_main
+	{
+		padding: 12px 0px 8px;
+		.logo_in_SUBSCRIBE
+		{
+			margin-right: 50px;
+		}
+		.text_in_SUBSCRIBE
+		{
+			width: 180px;
+		}
+		.send_mail
+		{
+
+			input
+			{	
+				width: 248px;
+			}
+			button
+			{
+				width: 101px;
+			}
+		}
+	}
+}
+.back_for_proces
+{
+	.content_main
+	{
+		padding: 22px 0 32px;
+		dir
+		{
+			li
+			{
+				width: 135px;
+   				margin-left: 15px;
+   				margin-right: 0;
+				section
+				{
+					padding-left: 0;
+					img
+					{
+
+					}
+					h4
+					{
+						font-size: 15px;
+					}
+				}
+				p
+				{
+					font-size: 12px;
+					line-height: 16px;
+					padding-left: 0;
+				}
+			}
+			li:first-child
+			{
+				margin-left: 0;
+			}
+		}
+	}
+
+}
+footer
+{
+	.back_for_footer
+	{
+		.content_main
+		{
+			.left_block_in_footer
+			{
+				vertical-align: top;
+				width: 100%;
+				margin: 0;
+				.address_in_footer
+				{
+					width: 400px;
+					.left_block
+					{
+						padding: 21px 20px 0px 32px;
+						width: 390px;
+					}
+					.right_block
+					{
+						padding: 11px 31px 11px;
+						width: 390px;
+					}
+				}
+				.time_of_work_in_footer
+				{
+    				.left_block_s
+					{
+						padding: 1px 31px;
+					}
+				}
+				.right_block_s
+					{
+						float: none;
+    					display: inline-block;
+    					margin-top: 25px;
+    					width: 143px;
+						div
+					{
+						margin: 3px 7px;
+					}
+					section
+					{
+						    margin: 7px 8px;
+					}	
+					}
+			}
+			.right_block_in_footer
+			{
+				float: none;
+    			width: 100%;
+    			.conteiner_for_compani
+    			{
+    				float: right;
+    				margin: 23px 0;
+    			}
+				section
+				{
+					margin: 28px 0;
+    				float: left;
 				}
 			}
 		}

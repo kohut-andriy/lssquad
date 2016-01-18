@@ -497,7 +497,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   line-height: 39px;
   display: block;
 }
-.promo-wrapper .promo aside ul li:after {
+.promo-wrapper .promo aside ul li:not(:first-child):after {
   content: "";
   width: 9px;
   height: 15px;
@@ -514,6 +514,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   font-size: 15px;
   letter-spacing: normal;
   font-weight: normal;
+  color: #fff;
 }
 .promo-wrapper .promo aside ul li:first-child a {
   line-height: 45px;
@@ -743,7 +744,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   font-weight: bold;
   font-size: 12px;
   padding: 12px 0;
-  max-width: 186px;
+  width: 186px;
   text-transform: uppercase;
   display: block;
   color: #000;
@@ -1358,6 +1359,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 }
 .back_for_BRANDS .content_main .list_of_shit {
   column-count: 7;
+  -webkit-column-count: 7;
 }
 .back_for_BRANDS .content_main .list_of_shit li {
   line-height: 17px;
@@ -1565,10 +1567,28 @@ footer .back_for_footer .content_main .left_block_in_footer .coll_in_footer sect
   padding-top: 22px;
 }
 footer .back_for_footer .content_main .left_block_in_footer .address_in_footer {
+  width: 450px;
+  float: left;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+footer .back_for_footer .content_main .left_block_in_footer .address_in_footer .left_block {
   width: 288px;
   float: left;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  margin: 0;
+  padding: 21px 24px 0px 0px;
 }
-footer .back_for_footer .content_main .left_block_in_footer .address_in_footer p {
+footer .back_for_footer .content_main .left_block_in_footer .address_in_footer .right_block {
+  width: 133px;
+  float: left;
   font-family: arial;
   font-size: 13px;
   font-weight: normal;
@@ -1580,7 +1600,11 @@ footer .back_for_footer .content_main .left_block_in_footer .address_in_footer p
 }
 footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_footer {
   float: left;
-  width: 133px;
+}
+footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_footer .left_block_s {
+  width: 288px;
+  float: left;
+  padding: 12px 0;
 }
 footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_footer p {
   font-family: arial;
@@ -1591,14 +1615,18 @@ footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_foo
   padding: 21px 0;
   margin: 0;
 }
-footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_footer div {
-  margin: 4px 0;
-}
-footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_footer div a:nth-child(2) img {
-  margin-left: 5px;
-}
 footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_footer section {
   margin-top: 8px;
+}
+footer .back_for_footer .content_main .left_block_in_footer .right_block_s {
+  width: 133px;
+  float: left;
+}
+footer .back_for_footer .content_main .left_block_in_footer .right_block_s div {
+  margin: 3px 0;
+}
+footer .back_for_footer .content_main .left_block_in_footer .right_block_s div a:nth-child(2) img {
+  margin-left: 5px;
 }
 footer .back_for_footer .content_main .right_block_in_footer {
   float: right;
@@ -1648,6 +1676,96 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     margin: auto;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  header .back_black .button_hover #owl-carousel-first {
+    width: 100%;
+    left: -1px;
+  }
+  header .back_black .content_main nav dir li:before {
+    left: -7px;
+  }
+  header .back_black .content_main nav dir li {
+    padding: 6px 8px 4px 8px;
+  }
+  header .back_black .content_main .exit {
+    margin: 10px 0px 10px 34px;
+  }
+  header .back_black .content_main .trash {
+    padding: 17px 14px 21px 38px;
+    font-size: 13px;
+    right: 0px;
+  }
+  header .white_back .content_main .logo_in_header {
+    margin: 20px 8px 27px 3px;
+  }
+  header .white_back .content_main .logo_in_header img {
+    width: 134px;
+  }
+  header .white_back .content_main .coll_in_header {
+    width: 150px;
+  }
+  header .white_back .content_main .coll_in_header p span {
+    font-size: 17px;
+    display: block;
+    padding-top: 3px;
+  }
+  header .white_back .content_main .for_planshet {
+    width: 300px;
+    float: left;
+  }
+  header .white_back .content_main .for_planshet .address_in_header:before {
+    top: 6px;
+  }
+  header .white_back .content_main .for_planshet .address_in_header {
+    width: 315px;
+  }
+  header .white_back .content_main .for_planshet .address_in_header p {
+    margin: 5px 8px;
+  }
+  header .white_back .content_main .for_planshet .time_work_in_header {
+    width: 100%;
+  }
+  header .white_back .content_main .for_planshet .time_work_in_header p {
+    margin: 5px 4px 0px 6px;
+  }
+  header .white_back .content_main .asq_in_header:before {
+    top: 6px;
+    left: 25px;
+  }
+  header .white_back .content_main .asq_in_header {
+    width: 150px;
+  }
+  header .white_back .content_main .asq_in_header p {
+    margin: 5px 8px 1px 47px;
+  }
+  header .white_back .content_main .mail_in_header:before {
+    left: 1px;
+  }
+  header .white_back .content_main .mail_in_header {
+    width: 134px;
+    position: relative;
+    min-height: 44px;
+  }
+  header .white_back .content_main .mail_in_header a {
+    margin: 23px;
+    line-height: 27px;
+  }
+  header .white_back .content_main .other_address_in_header {
+    padding: 2px 4px 13px 152px;
+  }
+  header .white_back .content_main .tell_friand_in_header {
+    padding-top: 11px;
+  }
+  header .white_back .content_main .tell_friand_in_header span {
+    margin-right: 4px;
+  }
+  header .white_back .content_main .tell_friand_in_header dir li:last-child {
+    width: 16px;
+  }
+  header .white_back .content_main .tell_friand_in_header dir li {
+    width: 31px;
+    padding-left: 0;
+    overflow: inherit;
   }
   .promo-wrapper .promo h1 {
     font-size: 15px;
@@ -2132,6 +2250,104 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
   .comments-wrapper .comments .help-box .help-link a {
     color: #2b7bce;
     font-size: 15px;
+  }
+  .back_for_BRANDS {
+    color: white;
+  }
+  .back_for_BRANDS .content_main {
+    padding: 40px 0 81px;
+  }
+  .back_for_BRANDS .content_main .logo_partner {
+    margin: 25px 0px;
+  }
+  .back_for_BRANDS .content_main .logo_partner li:last-child {
+    padding-left: 25px;
+  }
+  .back_for_BRANDS .content_main .logo_partner li {
+    padding-left: 25px;
+  }
+  .back_for_BRANDS .content_main .list_of_shit {
+    -webkit-column-count: 7;
+  }
+  .back_for_SUBSCRIBE .content_main {
+    padding: 12px 0px 8px;
+  }
+  .back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE {
+    margin-right: 50px;
+  }
+  .back_for_SUBSCRIBE .content_main .text_in_SUBSCRIBE {
+    width: 180px;
+  }
+  .back_for_SUBSCRIBE .content_main .send_mail input {
+    width: 248px;
+  }
+  .back_for_SUBSCRIBE .content_main .send_mail button {
+    width: 101px;
+  }
+  .back_for_proces .content_main {
+    padding: 22px 0 32px;
+  }
+  .back_for_proces .content_main dir li {
+    width: 135px;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+  .back_for_proces .content_main dir li section {
+    padding-left: 0;
+  }
+  .back_for_proces .content_main dir li section h4 {
+    font-size: 15px;
+  }
+  .back_for_proces .content_main dir li p {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 0;
+  }
+  .back_for_proces .content_main dir li:first-child {
+    margin-left: 0;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer {
+    vertical-align: top;
+    width: 100%;
+    margin: 0;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer .address_in_footer {
+    width: 400px;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer .address_in_footer .left_block {
+    padding: 21px 20px 0px 32px;
+    width: 390px;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer .address_in_footer .right_block {
+    padding: 11px 31px 11px;
+    width: 390px;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer .time_of_work_in_footer .left_block_s {
+    padding: 1px 31px;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer .right_block_s {
+    float: none;
+    display: inline-block;
+    margin-top: 25px;
+    width: 143px;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer .right_block_s div {
+    margin: 3px 7px;
+  }
+  footer .back_for_footer .content_main .left_block_in_footer .right_block_s section {
+    margin: 7px 8px;
+  }
+  footer .back_for_footer .content_main .right_block_in_footer {
+    float: none;
+    width: 100%;
+  }
+  footer .back_for_footer .content_main .right_block_in_footer .conteiner_for_compani {
+    float: right;
+    margin: 23px 0;
+  }
+  footer .back_for_footer .content_main .right_block_in_footer section {
+    margin: 28px 0;
+    float: left;
   }
 }
 @media (max-width: 679px) {
