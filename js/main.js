@@ -42,3 +42,22 @@ $( ".trash" ).removeClass( "trash_1" );
 
 } 
 });
+
+
+var clickActive = function() {
+   if ( $(this).hasClass("active")) $(this).removeClass('active'); else  $(this).addClass('active');
+}
+
+
+
+
+$(document).ready(function(){
+    $("#promo-list").click(clickActive);
+    $("#offers-menu").click(clickActive);
+
+    $("#products-nav ul li").click(function(){
+      $("#products-nav ul li").removeClass('active');
+      $(this).addClass('active');
+    });
+
+  });
