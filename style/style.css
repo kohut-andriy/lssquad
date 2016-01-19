@@ -464,17 +464,36 @@ header .white_back .content_main .tell_friand_in_header dir li a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+header .white_back .content_main .tell_friand_in_header dir li .vk_l:hover {
+  background-position: 0 16px;
+}
 header .white_back .content_main .tell_friand_in_header dir li .mail_l {
   background-position-x: 18px;
+  background-position: 18px 0;
+}
+header .white_back .content_main .tell_friand_in_header dir li .mail_l:hover {
+  background-position: 18px 16px;
 }
 header .white_back .content_main .tell_friand_in_header dir li .odnoklas_l {
   background-position-x: 38px;
+  background-position: 38px 0;
+}
+header .white_back .content_main .tell_friand_in_header dir li .odnoklas_l:hover {
+  background-position: 38px 16px;
 }
 header .white_back .content_main .tell_friand_in_header dir li .twit_l {
   background-position-x: 59px;
+  background-position: 59px 0;
+}
+header .white_back .content_main .tell_friand_in_header dir li .twit_l:hover {
+  background-position: 59px 16px;
 }
 header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   background-position-x: 80px;
+  background-position: 80px 0;
+}
+header .white_back .content_main .tell_friand_in_header dir li .fase_l:hover {
+  background-position: 80px 16px;
 }
 .promo-wrapper {
   background-color: #ece7d7;
@@ -928,15 +947,19 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 }
 .services-wrapper .services ul li .icon.icon-2 {
   background-position-x: -85px;
+  background-position: -85px 0;
 }
 .services-wrapper .services ul li .icon.icon-3 {
   background-position-x: -170px;
+  background-position: -170px 0;
 }
 .services-wrapper .services ul li .icon.icon-4 {
   background-position-x: -255px;
+  background-position: -255px 0;
 }
 .services-wrapper .services ul li .icon.icon-5 {
   background-position-x: -340px;
+  background-position: -340px 0;
 }
 .services-wrapper .services ul li p {
   color: #ece7d7;
@@ -958,6 +981,21 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 }
 .services-wrapper .services ul li a:hover .icon {
   background-position-y: -75px;
+}
+.services-wrapper .services ul li a:hover .icon.icon-5 {
+  background-position: -340px -75px;
+}
+.services-wrapper .services ul li a:hover .icon.icon-4 {
+  background-position: -255px -75px;
+}
+.services-wrapper .services ul li a:hover .icon.icon-3 {
+  background-position: -170px -75px;
+}
+.services-wrapper .services ul li a:hover .icon.icon-2 {
+  background-position: -85px -75px;
+}
+.services-wrapper .services ul li a:hover .icon.icon-1 {
+  background-position: 0 -75px;
 }
 .services-wrapper .services ul li a:hover .service-descr {
   color: #dc3806;
@@ -1199,7 +1237,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   background-position: -32px;
 }
 .articles-wrapper .articles .news-block .logo-main:before {
-  background-position-x: 0;
+  background-position: 0 0;
 }
 .articles-wrapper .articles .border {
   width: 100%;
@@ -1456,9 +1494,11 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 }
 .back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li .f_in_SUBSCRIBE {
   background-position-x: 90px;
+  background-position: 90px 0;
 }
 .back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE li .twit_in_SUBSCRIBE {
   background-position-x: 40px;
+  background-position: 40px 0;
 }
 .back_for_SUBSCRIBE .content_main .text_in_SUBSCRIBE {
   float: left;
