@@ -77,6 +77,7 @@ header
 		font-weight: normal;
 		font-style: normal;
 		display: none;
+		cursor: pointer;
 		.count_in_header
 		{
 			color: #ffffff;
@@ -93,8 +94,8 @@ header
   		{
   			display: none;
   			position: absolute;
-  			width: 952px;
-  			left: 9px;
+  			width: 98%;
+  			left: 15px;
   			right: 10px;
   			top: 40px;
     		background: white;
@@ -283,6 +284,7 @@ header
     		font-style: normal;
     		padding: 0px;
    			margin: 10px 0px 10px 125px;
+
 		}
 		.trash_1:before
 		{
@@ -585,6 +587,7 @@ header
 				overflow: hidden;
 					li {
 					border-bottom: 1px solid #554d43;
+					background-color: #42392e;
 					text-indent: 14px;
 					text-transform: uppercase;
 					font-size: 12px;
@@ -846,6 +849,7 @@ header
 					display: block;
 					float: left;
 					border: 1px solid #c5bdb4;
+					cursor: pointer; 
 					a{
 						font-weight: bold;
 						font-size: 12px;
@@ -927,7 +931,7 @@ header
 						font-size: 18px;
 						font-family: 'ALSRubl';
 						display: inline-block;
-						padding: 2px 9px;
+						padding: 2px 8px 6px 15px;
 						background-color: #ffe328;
 						z-index: 1;
 						p {
@@ -946,7 +950,7 @@ header
 						height: 24px;
 						background-color: #ffe328;
 						position: absolute;
-						top: 3px;
+						top: 5px;
 						border-radius: 50%;
 						z-index: -1;
 						}
@@ -1071,13 +1075,14 @@ header
 					display: inline-block;
 					float: left;
 					border: 1px solid #c5bdb4;
+					cursor: pointer; 
 					a{
 						font-weight: bold;
 						font-size: 12px;
 						padding: 12px 0;
 						width: 189px;
 						text-transform: uppercase;
-						border-right: 1px solid #c5bdb4;
+						border-right: none;
 						display: block;
 						color: #000;
 					}
@@ -1137,7 +1142,7 @@ header
 						font-size: 18px;
 						font-family: 'ALSRubl';
 						display: inline-block;
-						padding: 4px 6px;
+						padding: 2px 8px 6px 15px;
 						background-color: #ffe328;
 						z-index: 1;
 						position: relative;
@@ -1873,7 +1878,7 @@ footer
 	}
 }
 
-@media (min-width: 750px) and (max-width: 940px) {
+@media (min-width: 750px) and (max-width: 1000px) {
   .content_main
  {
   max-width: 768px;
@@ -1889,12 +1894,13 @@ header
   {
   	.button_hover 
   	{
-  		#owl-carousel-first
-  		{
-  			width: 100%;
-  			left: -1px;
-  		}
+  		
   	}
+  	#owl-carousel-first
+  		{
+  			width: 97%;
+  			left: 15px;
+  		}
    	.content_main
 	{
 
@@ -1981,14 +1987,14 @@ header
   		.asq_in_header:before
   		{
   			top: 6px;
-    		left: 25px;
+    		left: 15px;
   		}
   		.asq_in_header
   		{
-  			width: 150px;
+  			width: 135px;
 			p
 			{
-				margin: 5px 8px 1px 47px;
+				margin: 5px 8px 1px 35px;
 			}
   		}
   		.mail_in_header:before
@@ -2003,6 +2009,7 @@ header
   			a
   			{
   				margin: 23px;
+  				margin-right: 0;
     			line-height: 27px;
   			}
   		}
@@ -2053,6 +2060,7 @@ header
 				z-index: 2;
 			}
 			#promo-list.active {
+
 				.promo-list-but:after {
 					transform: rotate(-90deg);
 				}
@@ -2063,6 +2071,8 @@ header
 			ul {
 				width: 100%;
 				min-height: 0;
+
+				
 					li:not(:first-child) {
 						display: none;
 						font-size: 9px;
@@ -2327,7 +2337,7 @@ header
 						font-size: 18px;
 						font-family: 'ALSRubl';
 						display: inline-block;
-						padding: 4px 6px;
+						padding: 2px 8px 6px 15px;
 						background-color: #ffe328;
 						z-index: 1;
 						position: relative;
@@ -2588,7 +2598,7 @@ header
 	color: white;
 	.content_main
 	{
-		padding: 40px 0 81px;
+		padding: 40px 15px 40px;
 		h2
 		{
 
@@ -2596,16 +2606,20 @@ header
 		.logo_partner
 		{
 			margin: 25px 0px;
+			width: 100%;
 			li:first-child
 			{
 			}
 			li:last-child
 			{
-				padding-left: 25px;
+				width: 18.36%;
+				padding-left: 0;
 			}
 			li
 			{ 
-				padding-left: 25px;
+				width: 20.4%;
+				padding-left: 0;
+				float: left;
 				img
 				{
 
@@ -2638,10 +2652,10 @@ header
 {
 	.content_main
 	{
-		padding: 12px 0px 8px;
+		padding: 12px 15px 8px;
 		.logo_in_SUBSCRIBE
 		{
-			margin-right: 50px;
+			margin-right: 24px;
 		}
 		.text_in_SUBSCRIBE
 		{
@@ -2653,6 +2667,7 @@ header
 			input
 			{	
 				width: 248px;
+
 			}
 			button
 			{
@@ -2665,13 +2680,15 @@ header
 {
 	.content_main
 	{
-		padding: 22px 0 32px;
+		padding: 22px 15px 32px;
 		dir
 		{
+			width: 100%;
 			li
 			{
-				width: 135px;
-   				margin-left: 15px;
+				width: 20.4%;
+				padding-right: 15px;
+   				margin-left: 0;
    				margin-right: 0;
 				section
 				{
@@ -2692,9 +2709,10 @@ header
 					padding-left: 0;
 				}
 			}
-			li:first-child
+			li:last-child
 			{
-				margin-left: 0;
+				width: 18.36%;
+				padding-right: 0;
 			}
 		}
 	}
@@ -2706,6 +2724,8 @@ footer
 	{
 		.content_main
 		{
+			padding-right: 15px;
+			padding-left: 15px;
 			.left_block_in_footer
 			{
 				vertical-align: top;
@@ -2801,7 +2821,7 @@ header
   		color: white;
   		position: relative;
   		float: left;
-  		width: 100%;
+  		width: auto;
     	text-align: left;
   	}
 		nav
@@ -2836,9 +2856,10 @@ header
 		}
 		.exit
 		{
-			    margin: -18px 52% 10px 0;
-			    float: right;
-			    border: none;
+		    margin-left: 15px;
+		    float: none;
+		    line-height: 38px;
+		    border: none;
 		}
 		.trash:before
 		{
@@ -2869,11 +2890,18 @@ header
 			}
 
   		}
+  		.logo_in_header {
+  			width: 40%;
+  			img {
+  				width: 100%;
+  			}
+  		}
   		.coll_in_header_f
   		{
-  			width: auto;
+  			width: 50%;
+  			text-align: right;
   			float: right;
-  			margin-top: 15px;
+  			margin-top: 10px;
   			p
   			{
   				display: none;
@@ -2884,6 +2912,7 @@ header
 				font-size: 17px;
 				margin-bottom: 0;
 				margin-right: 0;
+				margin: 18px 6px 0px;
 			}
   		}
   		.for_planshet
@@ -2896,8 +2925,8 @@ header
   		}
   		.mail_in_header
   		{
-  			width: auto;
     		float: right;
+    		text-align: right;
     		min-height: auto;
   			a
   			{
@@ -2916,9 +2945,12 @@ header
   		}
   		.for_mobile_in_header
   		{
+  			width: 50%;
   			padding: 0;
+  			text-align: right;
   			float: right;
   			display: block;
+  			margin-top: 2px;
   		}
   		.tell_friand_in_header
   		{
@@ -2955,12 +2987,17 @@ header
 				.promo-list-but:after {
 					transform: rotate(-90deg);
 				}
+				.promo-list-but {
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
+				}
 
 			}
 			ul {
 				width: 100%;
 				min-height: 0;
 				color: #fff;
+				background-color: transparent;
 					li:not(:first-child) {
 						display: none;
 						font-size: 12px;
@@ -3283,7 +3320,7 @@ header
 						font-size: 14px;
 						font-family: 'ALSRubl';
 						display: inline-block;
-						padding: 3px 10px;
+						padding: 2px 10px 4px 10px;
 						background-color: #ffe328;
 						z-index: 1;
 						position: relative;
@@ -3302,7 +3339,7 @@ header
 					.price:after {
 						content: '';
 						width: 24px;
-						height: 24px;
+						height: 22px;
 						background-color: #ffe328;
 						position: absolute;
 						top: 1px;
@@ -3590,7 +3627,8 @@ header
 			input
 			{
     			font-size: 13px;
-     			width: 69.65%;
+    			padding-bottom: 8px;
+     			width: 69%;
      			float: left;
      			margin-right: 0;
      			padding-right: 5px;
@@ -3612,8 +3650,10 @@ header
 			} 
 			button
 			{
-				width: 30.35%;
+				width: 30%;
+				margin-left: 1%;
     			font-size: 13px;
+				line-height: 31px;
     			margin-top: 0;
 			}
 		}

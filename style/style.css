@@ -67,6 +67,7 @@ header .back_black .button_hover {
   font-weight: normal;
   font-style: normal;
   display: none;
+  cursor: pointer;
 }
 header .back_black .button_hover .count_in_header {
   color: #ffffff;
@@ -82,8 +83,8 @@ header .back_black .button_hover .count_in_header {
 header .back_black .button_hover #owl-carousel-first {
   display: none;
   position: absolute;
-  width: 952px;
-  left: 9px;
+  width: 98%;
+  left: 15px;
   right: 10px;
   top: 40px;
   background: white;
@@ -505,6 +506,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
 }
 .promo-wrapper .promo aside ul li {
   border-bottom: 1px solid #554d43;
+  background-color: #42392e;
   text-indent: 14px;
   text-transform: uppercase;
   font-size: 12px;
@@ -763,6 +765,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   display: block;
   float: left;
   border: 1px solid #c5bdb4;
+  cursor: pointer;
 }
 .offers-wrapper .offers nav ul li a {
   font-weight: bold;
@@ -843,7 +846,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   font-size: 18px;
   font-family: 'ALSRubl';
   display: inline-block;
-  padding: 2px 9px;
+  padding: 2px 8px 6px 15px;
   background-color: #ffe328;
   z-index: 1;
   position: relative;
@@ -862,7 +865,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   height: 24px;
   background-color: #ffe328;
   position: absolute;
-  top: 3px;
+  top: 5px;
   border-radius: 50%;
   z-index: -1;
 }
@@ -980,6 +983,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   display: inline-block;
   float: left;
   border: 1px solid #c5bdb4;
+  cursor: pointer;
 }
 .products-wrapper .products nav ul li a {
   font-weight: bold;
@@ -987,7 +991,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   padding: 12px 0;
   width: 189px;
   text-transform: uppercase;
-  border-right: 1px solid #c5bdb4;
+  border-right: none;
   display: block;
   color: #000;
 }
@@ -1046,7 +1050,7 @@ header .white_back .content_main .tell_friand_in_header dir li .fase_l {
   font-size: 18px;
   font-family: 'ALSRubl';
   display: inline-block;
-  padding: 4px 6px;
+  padding: 2px 8px 6px 15px;
   background-color: #ffe328;
   z-index: 1;
   position: relative;
@@ -1691,7 +1695,7 @@ footer .back_for_footer .content_main .right_block_in_footer section {
 footer .back_for_footer .content_main .right_block_in_footer section img:nth-child(2) {
   padding-left: 3px;
 }
-@media (min-width: 750px) and (max-width: 940px) {
+@media (min-width: 750px) and (max-width: 1000px) {
   .content_main {
     max-width: 768px;
     width: 100%;
@@ -1699,9 +1703,9 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     padding-right: 15px;
     padding-left: 15px;
   }
-  header .back_black .button_hover #owl-carousel-first {
-    width: 100%;
-    left: -1px;
+  header .back_black #owl-carousel-first {
+    width: 97%;
+    left: 15px;
   }
   header .back_black .content_main nav dir li:before {
     left: -7px;
@@ -1754,13 +1758,13 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
   }
   header .white_back .content_main .asq_in_header:before {
     top: 6px;
-    left: 25px;
+    left: 15px;
   }
   header .white_back .content_main .asq_in_header {
-    width: 150px;
+    width: 135px;
   }
   header .white_back .content_main .asq_in_header p {
-    margin: 5px 8px 1px 47px;
+    margin: 5px 8px 1px 35px;
   }
   header .white_back .content_main .mail_in_header:before {
     left: 1px;
@@ -1772,6 +1776,7 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
   }
   header .white_back .content_main .mail_in_header a {
     margin: 23px;
+    margin-right: 0;
     line-height: 27px;
   }
   header .white_back .content_main .other_address_in_header {
@@ -2048,7 +2053,7 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     font-size: 18px;
     font-family: 'ALSRubl';
     display: inline-block;
-    padding: 4px 6px;
+    padding: 2px 8px 6px 15px;
     background-color: #ffe328;
     z-index: 1;
     position: relative;
@@ -2281,25 +2286,29 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     color: white;
   }
   .back_for_BRANDS .content_main {
-    padding: 40px 0 81px;
+    padding: 40px 15px 40px;
   }
   .back_for_BRANDS .content_main .logo_partner {
     margin: 25px 0px;
+    width: 100%;
   }
   .back_for_BRANDS .content_main .logo_partner li:last-child {
-    padding-left: 25px;
+    width: 18.36%;
+    padding-left: 0;
   }
   .back_for_BRANDS .content_main .logo_partner li {
-    padding-left: 25px;
+    width: 20.4%;
+    padding-left: 0;
+    float: left;
   }
   .back_for_BRANDS .content_main .list_of_shit {
     -webkit-column-count: 7;
   }
   .back_for_SUBSCRIBE .content_main {
-    padding: 12px 0px 8px;
+    padding: 12px 15px 8px;
   }
   .back_for_SUBSCRIBE .content_main .logo_in_SUBSCRIBE {
-    margin-right: 50px;
+    margin-right: 24px;
   }
   .back_for_SUBSCRIBE .content_main .text_in_SUBSCRIBE {
     width: 180px;
@@ -2311,11 +2320,15 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     width: 101px;
   }
   .back_for_proces .content_main {
-    padding: 22px 0 32px;
+    padding: 22px 15px 32px;
+  }
+  .back_for_proces .content_main dir {
+    width: 100%;
   }
   .back_for_proces .content_main dir li {
-    width: 135px;
-    margin-left: 15px;
+    width: 20.4%;
+    padding-right: 15px;
+    margin-left: 0;
     margin-right: 0;
   }
   .back_for_proces .content_main dir li section {
@@ -2329,8 +2342,13 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     line-height: 16px;
     padding-left: 0;
   }
-  .back_for_proces .content_main dir li:first-child {
-    margin-left: 0;
+  .back_for_proces .content_main dir li:last-child {
+    width: 18.36%;
+    padding-right: 0;
+  }
+  footer .back_for_footer .content_main {
+    padding-right: 15px;
+    padding-left: 15px;
   }
   footer .back_for_footer .content_main .left_block_in_footer {
     vertical-align: top;
@@ -2399,7 +2417,7 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     color: white;
     position: relative;
     float: left;
-    width: 100%;
+    width: auto;
     text-align: left;
   }
   header .back_black .content_main nav {
@@ -2418,8 +2436,9 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     padding: 0;
   }
   header .back_black .content_main .exit {
-    margin: -18px 52% 10px 0;
-    float: right;
+    margin-left: 15px;
+    float: none;
+    line-height: 38px;
     border: none;
   }
   header .back_black .content_main .trash:before {
@@ -2436,10 +2455,17 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
   header .white_back .content_main .coll_in_header span {
     display: none;
   }
+  header .white_back .content_main .logo_in_header {
+    width: 40%;
+  }
+  header .white_back .content_main .logo_in_header img {
+    width: 100%;
+  }
   header .white_back .content_main .coll_in_header_f {
-    width: auto;
+    width: 50%;
+    text-align: right;
     float: right;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   header .white_back .content_main .coll_in_header_f p {
     display: none;
@@ -2449,6 +2475,7 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     font-size: 17px;
     margin-bottom: 0;
     margin-right: 0;
+    margin: 18px 6px 0px;
   }
   header .white_back .content_main .for_planshet {
     display: none;
@@ -2457,8 +2484,8 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     display: none;
   }
   header .white_back .content_main .mail_in_header {
-    width: auto;
     float: right;
+    text-align: right;
     min-height: auto;
   }
   header .white_back .content_main .mail_in_header a {
@@ -2470,9 +2497,12 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     display: none;
   }
   header .white_back .content_main .for_mobile_in_header {
+    width: 50%;
     padding: 0;
+    text-align: right;
     float: right;
     display: block;
+    margin-top: 2px;
   }
   header .white_back .content_main .tell_friand_in_header {
     display: none;
@@ -2514,10 +2544,15 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }
+  .promo-wrapper .promo aside #promo-list.active .promo-list-but {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
   .promo-wrapper .promo aside ul {
     width: 100%;
     min-height: 0;
     color: #fff;
+    background-color: transparent;
   }
   .promo-wrapper .promo aside ul li:not(:first-child) {
     display: none;
@@ -2823,7 +2858,7 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     font-size: 14px;
     font-family: 'ALSRubl';
     display: inline-block;
-    padding: 3px 10px;
+    padding: 2px 10px 4px 10px;
     background-color: #ffe328;
     z-index: 1;
     position: relative;
@@ -2841,7 +2876,7 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
   .products-wrapper .products .products-items li figure .price:after {
     content: '';
     width: 24px;
-    height: 24px;
+    height: 22px;
     background-color: #ffe328;
     position: absolute;
     top: 1px;
@@ -3098,7 +3133,8 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
   }
   .back_for_SUBSCRIBE .content_main .send_mail input {
     font-size: 13px;
-    width: 69.65%;
+    padding-bottom: 8px;
+    width: 69%;
     float: left;
     margin-right: 0;
     padding-right: 5px;
@@ -3117,8 +3153,10 @@ footer .back_for_footer .content_main .right_block_in_footer section img:nth-chi
     font-size: 13px;
   }
   .back_for_SUBSCRIBE .content_main .send_mail button {
-    width: 30.35%;
+    width: 30%;
+    margin-left: 1%;
     font-size: 13px;
+    line-height: 31px;
     margin-top: 0;
   }
   .back_for_proces {

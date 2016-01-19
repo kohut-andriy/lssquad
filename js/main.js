@@ -6,16 +6,19 @@ $('#owl-carousel-first').owlCarousel({
        
     });
 $('#owl-carousel_sec').owlCarousel({
-   			loop:true,
-   			center:true,
-  			//autoplay:true,
+      loop:true,
+      center:true,
+     //autoplay:true,
         autowidth: true,
-    		autoplayTimeout:5000,
-    		autowidth:true,
-    		items:1,
-    		navigation: true,
-    		controls: true,
-		});
+      autoplayTimeout:5000,
+      autowidth:true,
+      items:1,
+      navigation: true,
+      controls: true,
+  });
+$(window).on('load',windowSize);
+$(window).resize(windowSize);
+
 function windowSize(){
   if ($(window).width() > '940'){
    $(window).scroll(function() { 
@@ -39,9 +42,14 @@ function windowSize(){
       $( ".trash" ).removeClass( "trash_1" );
     } 
   });
-   $('.button_hover').hover(function (){
-  $( "#owl-carousel-first" ).slideToggle();
-});
+    $(".button_hover").hover(
+   function(){
+       $("#owl-carousel-first", this).delay(500).slideDown();
+   },
+   function(){
+       $("#owl-carousel-first", this).stop(true, true).slideUp();
+   }
+)
  } else if ($(window).width() > '750' && $(window).width() < '940') {
 $(window).scroll(function()  { 
     if ($(this).scrollTop() > 50){ 
@@ -63,15 +71,14 @@ $(window).scroll(function()  {
       $("#nav_menu_in_header li:first-child").css("padding", "6px 13px 4px 0");
       $(".trash").html("Ваша корзина");
       $( ".trash" ).removeClass( "trash_1" );
-
     } 
-  });
+  });   
 $('.button_hover').on('click', function(){
   $( "#owl-carousel-first" ).slideToggle();
 });
 }
 }
-$(window).on('load resize',windowSize);
+
 
 
 var clickActive = function() {
@@ -85,7 +92,10 @@ $(document).ready(function(){
       $("#products-nav ul li").removeClass('active');
       $(this).addClass('active');
     });
-
+     $("#offers-menu ul li").click(function(){
+      $("#offers-menu ul li").removeClass('active');
+      $(this).addClass('active');
+    });
   });
 $('.button_for_mob_menu').on('click', function(){
 $( "#nav_menu_in_header" ).slideToggle();
