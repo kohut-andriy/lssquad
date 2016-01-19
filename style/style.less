@@ -59,6 +59,10 @@ header
   .back_black
   {
   background-color: #2b2723;
+  	.button_for_mob_menu
+  	{
+  		display: none;
+  	}
   	.button_hover
   	{
   		float: left;
@@ -340,7 +344,7 @@ header
   		{
   			margin: 20px 24px 20px 5px;
   		}
-  		.coll_in_header
+  		.coll_in_header, .coll_in_header_f
   		{
   			width: 192px;
   			p
@@ -350,14 +354,19 @@ header
 				font-size: 11px;
 				font-weight: normal;
 				font-style: normal;
-				margin: 10px 6px;
-				span
+				    margin: 10px 6px 0px;
+  			}
+  			span
 				{
 					font-size: 21px;
 					display: block;
 					    padding-top: 1px;
+					    color: #583843;
+					    font-family:arial;
+				font-weight: normal;
+				font-style: normal;
+				margin: 1px 6px 10px;
 				}
-  			}
   		}
   		.address_in_header:before
   		{
@@ -457,6 +466,18 @@ header
   			{
   				text-decoration: none;
   			}
+  			a
+  			{
+  				color: #2b7bce;
+  				text-decoration: underline;
+  				font-family:arial;
+				font-size: 13px;
+				font-weight: normal;
+				font-style: normal;
+  			}
+  		}
+  		.for_mobile_in_header
+  		{display: none;
   			a
   			{
   				color: #2b7bce;
@@ -1852,7 +1873,7 @@ footer
 	}
 }
 
-@media (min-width: 680px) and (max-width: 940px) {
+@media (min-width: 750px) and (max-width: 940px) {
   .content_main
  {
   max-width: 768px;
@@ -1921,19 +1942,15 @@ header
   				width: 134px;
   			}
   		}
-  		.coll_in_header
+  		.coll_in_header, .coll_in_header_f
   		{
   			width: 150px;
-  			p
-  			{
-
-				span
+  			span
 				{
 					font-size: 17px;
     				display: block;
     				padding-top: 3px;
 				}
-  			}
   		}
   		
   		.for_planshet
@@ -2751,13 +2768,165 @@ footer
 }
 }
 
-@media (max-width: 679px) {
+@media (max-width: 749px) {
   .content_main
  {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
  }
+
+header
+{
+  .back_black
+  {
+   	.content_main
+	{
+		.button_for_mob_menu:before
+  	{
+  		content: url(../img/button_for_mobile.png);
+  		position: absolute;
+  		left: 2px;
+  	}
+  	.button_for_mob_menu
+  	{
+  		display: block;
+  		padding-left: 20px;
+    	padding-top: 10px;
+  		background: no-repeat;
+  		border: none;
+  		font-weight: normal;
+  		font-family: arial;
+  		font-size: 15px;
+  		color: white;
+  		position: relative;
+  		float: left;
+  		width: 100%;
+    	text-align: left;
+  	}
+		nav
+		{    
+		display: none;
+    	margin: 6px 0px;
+    	clear: both;
+			dir
+			{
+				li:first-child
+				{
+					padding: 0;
+				}
+				li:first-child:before
+				{
+
+				}
+				li:before
+				{
+					content: none;
+				}
+				li
+				{
+					display: block;
+  					padding: 0;
+				}
+			}
+		}
+		.exit:hover
+		{
+
+		}
+		.exit
+		{
+			    margin: -18px 52% 10px 0;
+			    float: right;
+			    border: none;
+		}
+		.trash:before
+		{
+			top: 17px;
+		}
+		.trash
+		{
+			right: 3px;
+			font-size: 13px;
+			padding: 20px 20px 24px 36px;
+		}
+	}
+  }
+  .white_back
+  {
+
+  	.content_main
+  	{
+  		.coll_in_header
+  		{
+  			p
+  			{
+  				display: none;
+  			}
+  			span
+			{
+				display: none;
+			}
+
+  		}
+  		.coll_in_header_f
+  		{
+  			width: auto;
+  			float: right;
+  			margin-top: 15px;
+  			p
+  			{
+  				display: none;
+  			}
+  			span
+			{
+				display: block;
+				font-size: 17px;
+				margin-bottom: 0;
+				margin-right: 0;
+			}
+  		}
+  		.for_planshet
+  		{
+  			display: none;
+  		}
+  		.asq_in_header
+  		{
+  			display: none;
+  		}
+  		.mail_in_header
+  		{
+  			width: auto;
+    		float: right;
+    		min-height: auto;
+  			a
+  			{
+  				margin: 0;
+  				margin-left: 22px;
+  				font-size: 13px;
+  			}
+  		}
+  		.other_address_in_header
+  		{
+  			display: none;
+  			a
+  			{
+
+  			}
+  		}
+  		.for_mobile_in_header
+  		{
+  			padding: 0;
+  			float: right;
+  			display: block;
+  		}
+  		.tell_friand_in_header
+  		{
+  			display: none;
+  		}
+  	}
+  }
+}
 
 .promo-wrapper {
 	padding: 0;
@@ -2932,6 +3101,7 @@ footer
 						max-width: 100%;
 						border: 1px solid #c5bdb4;
 						border-top: none;
+						width: 100%;
 					}
 				}
 				li.active {
@@ -3035,6 +3205,7 @@ footer
 				margin-bottom: 15px;
 				p {
 					display: none;
+
 				}
 				.service-descr {
 				min-height: 0;
@@ -3451,5 +3622,111 @@ footer
 
 .back_for_proces {
 	display: none;
+}
+
+footer
+{
+	width: 100%;
+	.back_for_footer
+	{
+		.content_main
+		{
+			padding: 14px 15px;
+			.left_block_in_footer
+			{
+				vertical-align: top;
+				width: 100%;
+				margin: 0;
+				.fist_block_in_footer {
+					li {
+					padding-left: 0;
+				    padding-right: 20px;
+				    line-height: 1.7;
+				}
+				}
+				.coll_in_footer {
+					width: 50%;
+					p {
+						font-size: 13px;
+						span {
+							font-size: 14px;
+						}
+				}
+				section {
+					padding-top: 10px;
+				}
+				
+				}
+
+				.address_in_footer
+				{
+					width: 100%;
+					margin-top: 24px;
+					.left_block
+					{
+						padding: 0;
+						width: 100%;
+					}
+					.right_block
+					{
+						width: 100%;
+						margin: 0;
+						padding-top: 10px;
+					}
+					}
+				.time_of_work_in_footer
+				{
+    				.left_block_s
+					{
+						padding: 0;
+						text-align: left;
+					}
+				}
+				.right_block_s
+					{
+						float: none;
+    					display: inline-block;
+    					margin-top: 25px;
+    					width: 50%;
+						padding-left: 13px;
+						div
+					{
+						margin: 3px 7px;
+						a {
+							display: inline-block;
+							width: 50%;
+							float: left;
+						}
+					}
+					
+					section
+					{
+						    margin: 7px 8px;
+					}	
+					}
+			}
+			.right_block_in_footer
+			{
+				float: none;
+    			width: 100%;
+    			.conteiner_for_compani
+    			{
+    				width: 100%;
+    				float: right;
+    				margin: 0;
+    				margin-top: 35px;
+    				p {
+    					text-align: center;
+    				}
+    			}
+				section
+				{
+					margin: 26px 0;
+    				width: 100%;
+    				text-align: center;
+				}
+			}
+		}
+	}
 }
 }
